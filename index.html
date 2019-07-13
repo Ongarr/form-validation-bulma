@@ -5,9 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Form validation with using Bulma framework</title>
+    <link rel="stylesheet" href="/bulma/css/bulma.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <form class="signup-form">
+        <div class="field">
+            <label class="label">Username</label>
+            <div class="control">
+                <input class="input is-medium" id="username" type="text" placeholder="e.g Alex Smith">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Password</label>
+            <div class="control">
+                <input class="input is-medium" type="password" placeholder="e.g. $ecreTPaSs">
+            </div>
+          </div>
+            <div class="control is-expanded">
+              <input type="submit" value="Sign in!" class="button is-link">
+            </div>
+          <p class="help feedback"></p>
     
+    </form>
+    <script src="/main.js"></script>
 </body>
-<script src="/main.js"></script>
 </html>
